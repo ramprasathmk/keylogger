@@ -71,9 +71,9 @@ Install the required dependencies:
 pip install -r requirements.txt
 ```
 
-### 🔍 Usage
+## 🔍 Usage
 
-- Once you've set up the environment, you're ready to run the keylogger.
+Once you've set up the environment, you're ready to run the keylogger.
 
 #### 1. Run the Keylogger
 
