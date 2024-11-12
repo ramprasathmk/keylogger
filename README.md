@@ -107,7 +107,7 @@ python keylogger.py
 - This **README** provides a friendly, clear, and ethical overview, and ensures users understand both setup and legal considerations.
 
 
-## Show your support
+## ✨ Show your support
 Give a ⭐ if you like this repository!
 
 Happy Logging! 🔍
