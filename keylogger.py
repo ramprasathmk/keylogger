@@ -15,7 +15,7 @@ flag: bool = False
 keys: str = ""
 
 
-def generate_text_log(key) -> None:
+def generate_text_log(key: _Any) -> None:
     """
     def generate_text_log(key: Any) -> None:
         Generate the logs in .txt format
@@ -24,7 +24,7 @@ def generate_text_log(key) -> None:
         keys.write(key)
 
 
-def generate_json_file(used_keys) -> None:
+def generate_json_file(used_keys: _Any) -> None:
     """
     def generate_json_file(used_keys: Any) -> None:
         Generate the logs in .json format
