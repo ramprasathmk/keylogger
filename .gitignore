@@ -1,0 +1,16 @@
+# Ignore Files
+*.pyi
+*.pyi
+
+# Ignore Virtual Environments
+.venv
+.conda
+venv
+env
+
+# Ignore Folders
+__pycache__
+.vscode
+.idea
+build
+out
