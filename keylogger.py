@@ -36,11 +36,11 @@ def generate_json_file(used_keys: _Any) -> None:
 
 def on_press(key: _Any) -> None:
     global flag, keys_used, keys
-    if flag == False:
+    if not flag:
         keys_used.append({"Pressed": f"{key}"})
         flag = True
 
-    if flag == True:
+    if flag:
         keys_used.append({"Held": f"{key}"})
     generate_json_file(keys_used)
 
@@ -49,7 +49,7 @@ def on_release(key: _Any) -> None:
     global flag, keys_used, keys
     keys_used.append({"Released": f"{key}"})
 
-    if flag == True:
+    if flag:
         flag = False
     generate_json_file(keys_used)
 
