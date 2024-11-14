@@ -7,7 +7,7 @@ from tkinter import Label as _Label
 from pynput import keyboard as _keyboard
 from typing import Any as _Any
 
-import json as _JSON
+import json as _json
 
 
 keys_used: list = []
@@ -20,8 +20,8 @@ def generate_text_log(key: _Any) -> None:
     def generate_text_log(key: Any) -> None:
         Generate the logs in .txt format
     """
-    with open("./out/key_log.txt", "w+") as keys:
-        keys.write(key)
+    with open("./out/key_log.txt", "w+") as KEYS:
+        KEYS.write(key)
 
 
 def generate_json_file(used_keys: _Any) -> None:
@@ -30,7 +30,7 @@ def generate_json_file(used_keys: _Any) -> None:
         Generate the logs in .json format
     """
     with open("./out/key_log.json", "+wb") as key_log:
-        key_list_bytes = _JSON.dumps(used_keys).encode()
+        key_list_bytes = _json.dumps(used_keys).encode()
         key_log.write(key_list_bytes)
 
 
@@ -93,7 +93,7 @@ if __name__ == "__main__":
     root = _Tk()
     root.title("Keylogger")
 
-    label = _Label(root, text='Click "Start" to begin keylogging.')
+    label = _Label(root, text='Click "Start" to begin key logging...')
     label.config(anchor=_CENTER)
     label.pack()
 
