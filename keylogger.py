@@ -14,7 +14,7 @@ import json as _json
 keys_used: list = []
 flag: bool = False
 keys: str = ""
-now =datetime.now()
+now: datetime = datetime.now()
 
 
 def generate_text_log(key: _Any) -> None:
