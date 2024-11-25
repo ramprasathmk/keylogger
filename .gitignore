@@ -18,3 +18,4 @@ __pycache__
 # Ignore Output directory
 build/
 out/
+/out/
