@@ -24,7 +24,7 @@ The project contains the following main files:
 
 ---
 
-## Technologies Used
+## </> Technologies Used
 [![Techs Used](https://skillicons.dev/icons?i=git,github,pycharm,py,md,bash&theme=light)](https://skillicons.dev)
 ---
 
