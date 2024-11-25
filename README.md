@@ -1,6 +1,6 @@
 # Keylogger
 
-**Keylogger** is a Python-based project designed to capture and log keystrokes. It demonstrates how keylogging can be used for various purposes, such as monitoring typing activity for research, troubleshooting keyboard issues, or learning how keyloggers work for cybersecurity education.
+**Keylogger** is a Python-based project designed to capture and log keystrokes. It demonstrates how key-logging can be used for various purposes, such as monitoring typing activity for research, troubleshooting keyboard issues, or learning how keyloggers work for cybersecurity education.
 
 ⚠️ **Note**: This project is for **educational purposes only**. Please use responsibly and only on systems you have permission to monitor.
 
@@ -24,6 +24,10 @@ The project contains the following main files:
 
 ---
 
+## Technologies Used
+[![Techs Used](https://skillicons.dev/icons?i=git,github,pycharm,py,md,bash&theme=light)](https://skillicons.dev)
+---
+
 ## 🛠️ Setup and Installation
 
 Follow these steps to get the project up and running on your local machine.
@@ -38,8 +42,8 @@ Follow these steps to get the project up and running on your local machine.
 #### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/ramprasathmk/keylogger.git
-cd keylogger
+  git clone https://github.com/ramprasathmk/keylogger.git
+  cd keylogger
 ```
 
 #### 2. Set Up Virtual Environment
@@ -47,7 +51,7 @@ cd keylogger
 Run this command to create and activate a virtual environment (recommended):
 
 ```bash
-python -m venv env
+  python -m venv env
 ```
 
 #### 3. Activate the Virtual Environment
@@ -55,12 +59,12 @@ python -m venv env
 - Windows:
 
 ```bash
-env\Scripts\activate
+  env\Scripts\activate
 ```
 
 - MacOS/Linux:
 ```bash
-source env/bin/activate
+  source env/bin/activate
 ```
 
 #### 4. Install Requirements
@@ -68,7 +72,7 @@ source env/bin/activate
 Install the required dependencies:
 
 ```bash
-pip install -r requirements.txt
+  pip install -r requirements.txt
 ```
 
 ## 🔍 Usage
@@ -80,7 +84,7 @@ Once you've set up the environment, you're ready to run the keylogger.
 - To start logging keystrokes, run:
 
 ```bash
-python keylogger.py
+  python keylogger.py
 ```
 
 #### 2. Check Logs
@@ -112,4 +116,4 @@ Give a ⭐ if you like this repository!
 
 Happy Logging! 🔍
 
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?&logo=buy-me-a-coffee&logoColor=black)](#)
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?&logo=buy-me-a-coffee&logoColor=black)]()
