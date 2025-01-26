@@ -1,6 +1,6 @@
 # Keylogger
 
-![Keylogger](https://www.timechamp.io/images/Key-loggers-title-image.webp)
+![Keylogger](https://t3.ftcdn.net/jpg/10/20/25/22/360_F_1020252214_jlf1xkZ2ZH75vSWwAFINeuU6iT4sVUJ0.jpg)
 
 **Keylogger** is a Python-based project designed to capture and log keystrokes. It demonstrates how key-logging can be used for various purposes, such as monitoring typing activity for research, troubleshooting keyboard issues, or learning how keyloggers work for cybersecurity education.
 
