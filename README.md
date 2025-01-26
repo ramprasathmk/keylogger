@@ -93,6 +93,10 @@ Once you've set up the environment, you're ready to run the keylogger.
 
 - Keystrokes are saved in a file (specified within the script). Open this file to view the logged keystrokes.
 
+#### 3. How it works?
+
+- Refer [Code.md](./Code.md)
+
 ## ⚠️ Disclaimer
 
 - This keylogger is intended for educational and research purposes only. Unauthorized keylogging is illegal and unethical. Only run this on systems you have permission to monitor.
@@ -118,4 +122,4 @@ Give a ⭐ if you like this repository!
 
 Happy Logging! 🔍
 
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?&logo=buy-me-a-coffee&logoColor=black)]()
+<!-- [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?&logo=buy-me-a-coffee&logoColor=black)]() -->
