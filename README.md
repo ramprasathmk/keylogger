@@ -109,7 +109,7 @@ Once you've set up the environment, you're ready to run the keylogger.
 - Contributions are welcome! Feel free to open issues or submit pull requests to improve the project. Always ensure compliance with ethical guidelines and project goals.
 
 ## 📄 License
-- This project is licensed under the MIT License - see the LICENSE file for details.
+- This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
 ## 🙋‍♂️ Questions?
 - If you have any questions or need clarification, feel free to reach out via the GitHub Issues section.
